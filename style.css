@@ -1,0 +1,72 @@
+/******google font***** */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+
+}
+/* header part */
+
+.header-img{
+    background-image:  url(images/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    box-shadow:5px 10px #888888;
+    width: 100%;
+    height: 500px;
+}
+
+.header-title{
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+}
+.header-para{
+    text-align: center;
+    margin: 0 200px 0 200px ;
+    padding-top: 20px;
+    color:white;
+    background-color:rgba(68, 8, 179,.3);
+    box-shadow: 0 0 90px  rgb(68, 13, 172);
+}
+.button-header{
+    display: flex;
+    justify-content: center;
+    margin:40px;
+}
+.button-link{
+    background-color:rgb(132, 92, 206);
+    width: 100px ;
+    height: 35px ;
+    border-radius: 5px ;
+}
+.button-link a{
+    text-decoration: none;
+    font-size: 16px ;
+}
+/* small device */
+@media only screen and (max-width: 600px) {
+    .header-para{
+        text-align: center;
+        margin: 0 50px 0 50px ;
+        padding-top: 20px;
+        color:white;
+        background-color:rgba(68, 8, 179,.3);
+        box-shadow: 0 0 90px  rgb(68, 13, 172);
+    }
+}
+
+/* tablet device */
+
+@media (min-width:601px) and (max-width:900px) {
+    .header-para{
+        text-align: center;
+        margin: 0 100px 0 100px ;
+        padding-top: 20px;
+        color:white;
+        background-color:rgba(68, 8, 179,.3);
+        box-shadow: 0 0 90px  rgb(68, 13, 172);
+    }
+}
