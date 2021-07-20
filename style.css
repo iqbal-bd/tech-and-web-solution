@@ -7,6 +7,25 @@ body{
 }
 /* header part */
 
+
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav{
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    list-style-type: none;
+
+}
+
+.nav>li>a{
+    text-decoration: none;
+}
+.nav-sm{
+    display: none;
+}
 .header-img{
     background-image:  url(images/header.jpg);
     background-repeat: no-repeat;
@@ -46,8 +65,39 @@ body{
     text-decoration: none;
     font-size: 16px ;
 }
+.login{
+    margin-right: 50px;
+}
+
 /* small device */
 @media only screen and (max-width: 600px) {
+
+    .nav{
+        display: none;
+    }
+    .nav-sm{
+        display: inline;
+    }
+
+    .sm{
+        display: none;
+    }
+
+    .nav-sm:hover .sm{
+        display: inline;
+        position: absolute;
+        background-color: rgba(138, 162, 177,.3);
+        box-shadow: 0 0 50px rgb(138, 162, 177);
+    }
+
+    .sm>li{
+        list-style-type: none;
+        margin-bottom: 10px;
+    }
+    .sm>li>a{
+        text-decoration: none;
+        color: black;
+    }
     .header-para{
         text-align: center;
         margin: 0 50px 0 50px ;
